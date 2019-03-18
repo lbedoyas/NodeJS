@@ -34,9 +34,11 @@ function saveUser(req, res)
         //Encriptar Contraseña 
         bcrypt.hash(params.password,null,null, function(err, hash){
             user.password = hash;
+            //Aca comprobamos que los campos tengan informacion
             if(user.name != null && user.surname != null && user.email != null)
             {
                 //Guarda el usuario
+                //.save es un metodo de mongoose
                 user.save((err, userStored) => {
                     if(err)
                     {
@@ -47,6 +49,7 @@ function saveUser(req, res)
                             {
                                 res.status(404).send({message: 'No se a registrado el usuario'});
                             }else{
+                                //Si no hay errores entra aca
                                 res.status(200).send({user: userStored});
                             }
                     }

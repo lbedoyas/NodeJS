@@ -18,5 +18,5 @@ var AlbumSchema = Schema({
 //User en la instruccion module.exports = mongoose.model('Album', albumSchema); permite el objeto 
 //User que es el mismo nombre de la collecion que se tiene en la base de datos de mongodb
 //se guarde como un objeto y se pueda utilizar en otro fichero para que se pueda instanciar
-//de acuerdo a los esquemasdefinidos en la variable ArtistSchema 15 de mayo 2018
+//de acuerdo a los esquemasdefinidos en la variable ArtistSchema 03/01/2019
 module.exports = mongoose.model('Album', AlbumSchema);

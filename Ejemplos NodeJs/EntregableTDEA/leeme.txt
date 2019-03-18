@@ -1,0 +1,16 @@
+Buenas Noches
+
+Se adjunta archivos de entregables del curso de nodejs 
+para el tecnologico de antioquia los archivos ejecutables son:
+
+1. principal: que corresponde al punto 1 el algoritmo se desarrollo en un mac 
+y solo ejercutando desde terminal o consola node principal.js funciona.
+
+2. principal_def: corresponde a los requerimientos del punto 2 
+dentro de las recomendaciones estaba el uso del metodo find pero 
+por temas de tiempo de debug no se uso sino que utilizo otra estructura 
+pero el algoritmo pide lo mismo que ele ejemplo espero que cumpla con los 
+criterios de aceptacion.
+
+el archivo se ejecuta con los mismo input del video de ejemplo para el 
+entregable ejemplo: node principal_def inscribir -i=4 -n=luis -x=1234333

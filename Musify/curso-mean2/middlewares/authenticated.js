@@ -7,7 +7,7 @@ var moment = require('moment');
 
 var secret = 'clave_secreta_curso';
 
-//
+//Nos permite comprobar si los datos son correcto del token generado
 exports.ensureAuth = function(req,res,next){
     if(!req.headers.authorization)
     {   
@@ -16,6 +16,8 @@ exports.ensureAuth = function(req,res,next){
         });
     }
 
+    //Existen situaciones en las que vengan en el token comillas simples y dobles 
+    //para prevee eso se debe reemplazar
     var token = req.headers.authorization.replace(/['"]+/g, '');
     try {
         var payload = jwt.decode(token, secret);

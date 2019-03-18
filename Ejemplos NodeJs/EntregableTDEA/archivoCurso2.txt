@@ -1,0 +1,3 @@
+el estudiante luis
+ con cedula 1234333 
+ se matriculado al curso de Pythony tiene una duracion de 32 horas Un valor de 700000 
